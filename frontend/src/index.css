@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #080B0E;
+    color: #F3F4F6;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  /* Custom scrollbar for telemetry panels */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0F141C;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #233042;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #33445C;
+  }
+}
+
+.glow-lime {
+  box-shadow: 0 0 20px rgba(180, 243, 66, 0.15);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.15);
+}
+
+.glass-panel {
+  background: rgba(15, 20, 28, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid #233042;
+}
+
+.circuit-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(35, 48, 66, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(35, 48, 66, 0.3) 1px, transparent 1px);
+}
